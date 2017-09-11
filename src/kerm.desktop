@@ -1,0 +1,20 @@
+[Desktop Entry]
+Comment=k easy runlevel management
+Comment[en_US]=k easy runlevel management
+DocPath=kerm/kerm.html
+Encoding=UTF-8
+Exec[$e]=kerm %i %m -caption "%c"
+GenericName=k easy runlevel management
+GenericName[en_US]=k easy runlevel management
+Icon=hi32-app-kerm.png
+MimeType=
+Name=kerm
+Name[en_US]=kerm
+Path[$e]=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DCOP-ServiceType=none
+X-KDE-SubstituteUID=true
+X-KDE-Username=root

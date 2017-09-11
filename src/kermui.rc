@@ -1,0 +1,70 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui version="2" name="kerm" >
+ <MenuBar noMerge="0" >
+  <Menu name="file" >
+   <text>F&amp;ile</text>
+   <Action name="importAction" text="Import"/>
+   <Action name="exportAction" />
+   <Separator name="separator_10" />
+   <Action name="fileToRunlevelAction" />
+   <Separator name="separator_11" />
+   <Action name="fileReloadAction" />
+   <Action name="fileApplyAction" />
+  </Menu>
+  <Menu name="Service" >
+   <text>&amp;Service</text>
+   <TearOffHandle name="handle01" />
+   <Action name="exportSelectedAction" />
+   <Separator name="separator_20" />
+   <Action name="serviceAddToAction" />
+   <Action name="serviceRemoveFromAction" />
+   <Separator name="separator_21" />
+   <Action name="serviceStartAction" />
+   <Action name="serviceRestartAction" />
+   <Action name="serviceStopAction" />
+   <Separator name="separator_22" />
+   <Action name="servicePropertiesAction" />
+  </Menu>
+  <Menu name="settings" >
+   <Action name="actionsShowHideAction" />
+   <Separator name="separator_21ax" />
+  </Menu>
+ </MenuBar>
+ <ToolBar noMerge="1" name="mainToolBar" >
+  <text>Main Toolbar</text>
+  <Action name="exportSelectedAction" />
+  <Action name="exportAction" />
+  <Action name="importAction" />
+  <Separator name="separator_4" />
+  <Action name="fileToRunlevelAction" />
+  <Separator name="separator_3" />
+  <Action name="fileApplyAction" />
+  <Action name="fileReloadAction" />
+  <Separator name="separator_2" />
+  <Action name="serviceAddToAction" />
+  <Action name="serviceRemoveFromAction" />
+  <Separator name="separator_1" />
+  <Action name="serviceStartAction" />
+  <Action name="serviceStopAction" />
+  <Action name="serviceRestartAction" />
+  <Separator name="separator_0" />
+  <Action name="file_quit" />
+ </ToolBar>
+ <ActionProperties>
+  <Action accel="F11" icon="list-remove" name="serviceRemoveFromAction" enabled="false" text="Remove"/>
+  <Action accel="F12" icon="list-add" name="serviceAddToAction" enabled="false" text="Add"/>
+  <Action accel="F6" icon="media-playback-start" name="serviceStartAction" enabled="false" text="Start"/>
+  <Action accel="F7" icon="media-skip-forward" name="serviceRestartAction" enabled="false" text="Restart"/>
+  <Action accel="F8" icon="media-playback-stop" name="serviceStopAction" enabled="false" text="Stop"/>
+  <Action name="edit_undo" enabled="false" />
+  <Action name="edit_redo" enabled="false" />
+  <Action accel="F4" icon="document-properties" name="servicePropertiesAction" enabled="false" text="Properties" />
+  <Action accel="F9" icon="dialog-ok" name="fileApplyAction" enabled="false" text="Apply"/>
+  <Action accel="F5" icon="view-refresh" name="fileReloadAction" text="Reload"/>
+  <Action accel="F3" icon="go-next" name="fileToRunlevelAction" text="Switch runlevel"/>
+  <Action accel="Ctrl+S" icon="document-save" name="exportAction" text="Export"/>
+  <Action accel="Ctrl+O" icon="document-open" name="importAction" text="Import"/>
+  <Action icon="legalmoves" name="exportSelectedAction" enabled="false" text="Export selected"/>
+  <Action icon="toggle_log" name="actionsShowHideAction" checked="true" text="Show actions"/>
+ </ActionProperties>
+</kpartgui>
